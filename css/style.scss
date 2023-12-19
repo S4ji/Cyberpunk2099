@@ -191,6 +191,29 @@ div {
     flex-direction: column;
 }
 
+.blessure {
+    height: 100vh;
+    overflow: scroll;
+}
+
+.tableau-blessure {
+    display: flex;
+    align-items: center;
+}
+.tableau-blessure table {
+    width: 10px;
+}
+
+.tableau-blessure th,
+td {
+    padding: 0.5rem;
+}
+
+.tableau-blessure > div {
+    display: grid;
+    grid-template-columns: 100px 100px 300px 100px 10px;
+}
+
 .panel h3 {
     text-align: center;
     margin-bottom: 1rem;
