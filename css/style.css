@@ -32,7 +32,7 @@
 }
 
 body {
-  width: 100%;
+  width: 95%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -40,15 +40,13 @@ body {
   scrollbar-width: none;
   background-color: #212529;
   color: #b8f8d8;
-  font-size: 10px;
+  font-size: 9px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body::-webkit-scrollbar {
   display: none;
-}
-
-th {
-  text-align: center;
 }
 
 h1 {
@@ -57,25 +55,35 @@ h1 {
 
 img {
   max-width: 100%;
-  width: 500px;
   height: auto;
 }
 
 table {
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
+  width: 350px;
+  margin-bottom: 1rem;
+}
+
+dl {
+  margin: 1rem;
+}
+
+dt {
+  font-size: 0.8rem;
+  margin: 0.8rem;
 }
 
 table,
 th,
 td {
-  border: 1px solid;
+  border: 2px solid;
   border-collapse: collapse;
 }
 
 th {
   padding: 1rem;
+  text-align: center;
 }
 
 td {
@@ -85,6 +93,7 @@ td {
 
 .card {
   display: flex;
+  flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
@@ -95,6 +104,7 @@ td {
 /* Add rounded corners to the top left and the top right corner of the image */
 img {
   border-radius: 5px 5px 0 0;
+  max-width: 100%;
 }
 
 div {
@@ -108,8 +118,17 @@ div {
 }
 
 #badge {
-  position: absolute;
-  left: 700px;
+  margin-left: 7rem;
+}
+
+.three-grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .tableaudetableau {
@@ -126,8 +145,36 @@ div {
 header {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
 header > .nes-btn > a {
   color: #000;
+}
+
+.portrait-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.background p {
+  font-size: 0.8rem;
+}
+
+button {
+  margin-bottom: 1rem;
+}
+
+hr {
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #b8f8d8;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
