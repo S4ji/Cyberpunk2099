@@ -173,3 +173,12 @@ div {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header > .nes-btn > a {
+    color: #000;
+}

@@ -121,4 +121,13 @@ div {
   text-align: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
+}
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header > .nes-btn > a {
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
