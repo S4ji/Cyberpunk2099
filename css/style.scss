@@ -81,41 +81,54 @@ $color-3F: #000;
     margin: 0;
 }
 
+/* Global styling */
+
 body {
     width: 95%;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    //Cacher la scrollbar
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    margin: 0 auto;
+    font-size: 9px;
     background-color: $color-black;
     color: $color-3B;
-    font-size: 9px;
-    margin-left: auto;
-    margin-right: auto;
 }
-//cacher la scrollbar sur chrome
+
+/* Hide scrollbar on Windows browsers */
+
 body::-webkit-scrollbar {
     display: none;
 }
+
+/* Headings */
 
 h1 {
     text-align: center;
 }
 
+/* Images */
+
 img {
     max-width: 100%;
-
     height: auto;
 }
 
+/* Tables */
+
 table {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 350px;
     margin-bottom: 1rem;
 }
+
+th,
+td {
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Description lists (dl) */
 
 dl {
     margin: 1rem;
@@ -123,28 +136,14 @@ dl {
 
 dt {
     font-size: 0.8rem;
-    margin: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 dd {
+    margin-bottom: 0.8rem;
 }
 
-table,
-th,
-td {
-    border: 2px solid;
-    border-collapse: collapse;
-}
-
-th {
-    padding: 1rem;
-    text-align: center;
-}
-
-td {
-    text-align: center;
-    padding: 1rem;
-}
+/* Cards */
 
 .card {
     display: flex;
@@ -156,15 +155,20 @@ td {
     align-items: center;
 }
 
-/* Add rounded corners to the top left and the top right corner of the image */
+/* Rounded corners for image */
+
 img {
     border-radius: 5px 5px 0 0;
     max-width: 500px;
 }
 
+/* Generic div styling */
+
 div {
     margin-bottom: 1rem;
 }
+
+/* Flex container for specific elements */
 
 .divspec {
     display: flex;
@@ -172,9 +176,13 @@ div {
     align-items: flex-end;
 }
 
+/* Positioning badge */
+
 #badge {
     margin-left: 7rem;
 }
+
+/* Specific layouts for grids */
 
 .three-grid {
     display: grid;
@@ -191,15 +199,18 @@ div {
     flex-direction: column;
 }
 
+/* Injury details section */
+
 .blessure {
     height: 100vh;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .tableau-blessure {
     display: flex;
     align-items: center;
 }
+
 .tableau-blessure table {
     width: 10px;
 }
@@ -214,21 +225,26 @@ td {
     grid-template-columns: 100px 100px 300px 100px 10px;
 }
 
+/* Panel with h3 heading */
+
 .panel h3 {
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
 
+/* Header with button */
+
 header {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     margin-bottom: 30px;
 }
 
-header > .nes-btn > a {
+header .nes-btn a {
     color: #000;
 }
+
+/* Portrait information layout */
 
 .portrait-info {
     display: flex;
@@ -236,19 +252,37 @@ header > .nes-btn > a {
     justify-content: space-evenly;
 }
 
+/* Background paragraph */
+
 .background p {
     font-size: 0.8rem;
 }
 
-button {
-    margin-bottom: 1rem;
+.carre-combat1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-hr {
-    height: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-color: $color-3B;
+.carre-combat1 table {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carre-combat1 h2 {
+    text-align: center;
+}
+
+.arme-a-feu h2 {
+    text-align: center;
+}
+
+.cybernetics {
+    background-image: url(../img/Nakebody.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 @media (min-width: 768px) {
     .card {

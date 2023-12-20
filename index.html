@@ -29,24 +29,30 @@
 
             <a class="nes-btn" href="./contacts/indexcontact.html">Contacts</a>
             <a class="nes-btn" href="./blessure.html">Tableau Combat</a>
+            <a class="nes-btn" href="./cybernetique.html">Cybernetiques</a>
+            <a class="nes-btn" href="./equipements.html">Matériel</a>
         </header>
-        <section >
+        <section>
             <div>
                 <table>
-                    <tr>
-                        <th>Pseudo</th>
-                        <th>Alias</th>
-                        <th>Autre Alias</th>
-                        <th>Nom du Joueur</th>
-                        <th>Date de Création</th>
-                    </tr>
-                    <tr>
-                        <td>Sam Yaxin</td>
-                        <td>Silk</td>
-                        <td></td>
-                        <td>xTsuyux</td>
-                        <td>01/2023</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Pseudo</th>
+                            <th>Alias</th>
+                            <th>Autre Alias</th>
+                            <th>Nom du Joueur</th>
+                            <th>Date de Création</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="pseudo">Sam Yaxin</td>
+                            <td id="alias">Silk</td>
+                            <td id="autre_alias"></td>
+                            <td id="nom_du_joueur">xTsuyux</td>
+                            <td id="date_de_creation">01/2023</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </section>
@@ -57,21 +63,19 @@
                 <dl class="">
                     <h2>Signalement</h2>
                     <dt>Sexe</dt>
-                    <dd>A large feline inhabiting Bodmin Moor.</dd>
+                    <dd>init 0</dd>
                     <dt>Métatype</dt>
-                    <dd>A sea serpent.</dd>
+                    <dd>init 0</dd>
                     <dt>Taille</dt>
-                    <dd>A giant owl-like creature.</dd>
+                    <dd>init 0</dd>
                     <dt>Cheveux</dt>
-                    <dd>A giant owl-like creature.</dd>
+                    <dd>init 0</dd>
                     <dt>Groupe ethnique</dt>
-                    <dd>A giant owl-like creature.</dd>
-                    <dt>Signe Distinctifs</dt>
-                    <dd>A giant owl-like creature.</dd>
-                    <dt>Groupe ethnique</dt>
-                    <dd>Signes Distinctif</dd>
+                    <dd>init 0</dd>
+                    <dt>Signes Distinctifs</dt>
+                    <dd id="signes-distinctifs">init 0</dd>
                     <dt>Apparence Générale</dt>
-                    <dd>A giant owl-like creature.</dd>
+                    <dd id="apparence-generale">init 0</dd>
                 </dl>
                 <img src="./img/mc.jpg" alt="" />
             </div>
@@ -81,36 +85,34 @@
                     <dl class="nes-container">
                         <h2>Parcours Personalisé</h2>
                         <dt>Origine</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="origine">init 0</dd>
                         <dt>Personnalité</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="personnalite">init 0</dd>
                         <dt>Vêtements</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="vetements">init 0</dd>
                         <dt>Accessoire Favori</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="accessoire-favori">init 0</dd>
                         <dt>Qui compte le plus dans votre vie ?</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
-                        <dt>A qui tenez vous le plus ?</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="qui-compte-le-plus-dans-votre-vie">init 0</dd>
                         <dt>Origines Familiales</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="origines-familiales">init 0</dd>
                         <dt>Environnement</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="environnement">init 0</dd>
                         <dt>Crise Familiale</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="crise-familiale">init 0</dd>
                     </dl>
                     <dl class="nes-container">
                         <h2>Parcours Professionels</h2>
                         <dt>Relation envers les Autres</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="relation-envers-les-autres">init 0</dd>
                         <dt>Valeur Fondamentale</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="valeur-fondamentale">init 0</dd>
                         <dt>Tragédie Amoureuse</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="tragedie-amoureuse">init 0</dd>
                         <dt>But dans la vie</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
-                        <dt>Evènements professionnels</dt>
-                        <dd>A large feline inhabiting Bodmin Moor.</dd>
+                        <dd id="but-dans-la-vie">init 0</dd>
+                        <dt>Évènements professionnels</dt>
+                        <dd id="evenements-professionnels">init 0</dd>
                     </dl>
                 </div>
             </div>
@@ -197,379 +199,662 @@
             <div class="panel">
                 <div class="three-grid">
                     <hr><h3>Début</h3><hr>
-                    <div>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nom</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nationalité</th>
-                                <th>Statut Familial</th>
-                                <th>Indice</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                                <th>0</th>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
+                    <div id="identity-1">
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Nom</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identite-1-nom-0">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Nationalité</th>
+                                        <th>Statut Familial</th>
+                                        <th>Indice</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identite-1-nationalite-0">0</td>
+                                        <td id="identite-1-statut-familial-0">0</td>
+                                        <td id="identite-1-indice-0">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identite-1-permis-0">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identite-1-permis-1">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identite-1-permis-2">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identite-1-permis-3">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identite-1-permis-4">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identite-1-permis-5">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                     </div>
-                    <div>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nom</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nationalité</th>
-                                <th>Statut Familial</th>
-                                <th>Indice</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                                <th>0</th>
-                                <th>0</th>
-                            </tr>
-                        </table class="nes-table-responsive">
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
+                    <div id="identity-2">
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Nom</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-2-nom-0">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Nationalité</th>
+                                        <th>Statut Familial</th>
+                                        <th>Indice</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-2-nationalite-0">0</td>
+                                        <td id="identity-2-statut-familial-0">0</td>
+                                        <td id="identity-2-indice-0">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-2-permis-0">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-2-permis-1">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-2-permis-2">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-2-permis-3">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-2-permis-4">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-2-permis-5">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                     </div>
-                    <div>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nom</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nationalité</th>
-                                <th>Statut Familial</th>
-                                <th>Indice</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                                <th>0</th>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
+                    <div id="identity-3">
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Nom</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-3-nom-0">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Nationalité</th>
+                                        <th>Statut Familial</th>
+                                        <th>Indice</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-3-nationalite-0">0</td>
+                                        <td id="identity-3-statut-familial-0">0</td>
+                                        <td id="identity-3-indice-0">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-3-permis-0">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-3-permis-1">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-3-permis-2">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-3-permis-3">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-3-permis-4">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <table class="nes-table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Permis</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="identity-3-permis-5">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                     </div>
                     <hr><h3>Suite</h3><hr>
-                    <div>
+                    <div id="identity-4">
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nom</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-4-nom-0">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nationalité</th>
-                                <th>Statut Familial</th>
-                                <th>Indice</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                                <th>0</th>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Nationalité</th>
+                                    <th>Statut Familial</th>
+                                    <th>Indice</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-4-nationalite-0">0</td>
+                                    <td id="identity-4-statut-familial-0">0</td>
+                                    <td id="identity-4-indice-0">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-4-permis-0">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-4-permis-1">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-4-permis-2">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-4-permis-3">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-4-permis-4">0</td>
+                                </tr>
+                            </tbody>
                         </table>
-                    </div>
-                    <div>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nom</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nationalité</th>
-                                <th>Statut Familial</th>
-                                <th>Indice</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                                <th>0</th>
-                                <th>0</th>
-                            </tr>
-                        </table class="nes-table-responsive">
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
-                        </table>
-                        <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-4-permis-5">0</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
-                    <div>
+                    <div id="identity-5">
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nom</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-5-nom-0">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Nationalité</th>
-                                <th>Statut Familial</th>
-                                <th>Indice</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                                <th>0</th>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Nationalité</th>
+                                    <th>Statut Familial</th>
+                                    <th>Indice</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-5-nationalite-0">0</td>
+                                    <td id="identity-5-statut-familial-0">0</td>
+                                    <td id="identity-5-indice-0">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-5-permis-0">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-5-permis-1">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-5-permis-2">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-5-permis-3">0</td>
+                                </tr>
+                            </tbody>
                         </table>
+                    
                         <table class="nes-table-responsive">
-                            <tr>
-                                <th>Permis</th>
-                            </tr>
-                            <tr>
-                                <th>0</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-5-permis-4">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                        <table class="nes-table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-5-permis-5">0</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
+                    <div id="identity-6">
+                        <table class="nes-table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-6-nom-0">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                        <table class="nes-table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Nationalité</th>
+                                    <th>Statut Familial</th>
+                                    <th>Indice</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-6-nationalite-0">0</td>
+                                    <td id="identity-6-statut-familial-0">0</td>
+                                    <td id="identity-6-indice-0">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                        <table class="nes-table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-6-permis-0">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                        <table class="nes-table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-6-permis-1">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                        <table class="nes-table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-6-permis-2">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                        <table class="nes-table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-6-permis-3">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                        <table class="nes-table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-6-permis-4">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                        <table class="nes-table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Permis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="identity-6-permis-5">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                                     
                 </div>
             </div>
         </section>
@@ -869,7 +1154,6 @@
                 </article>
             </div>
         </section>
-        
     </body>
     <script src="accordion.js"></script>
 </html>
