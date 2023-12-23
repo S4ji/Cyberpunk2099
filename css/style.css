@@ -217,9 +217,34 @@ header .nes-btn a {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 @media (min-width: 768px) {
   .card {
     flex-direction: row;
   }
+}
+.gallerie {
+  background-color: black;
+  display: grid;
+  gap: 10px;
+  width: 900px;
+  aspect-ratio: 1/1;
+  grid-template-columns: repeat(5, auto);
+  min-height: 80vh;
+  max-height: 80vh;
+}
+
+.gallerie > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+
+.gallerie > img:hover {
+  width: 525px;
+  height: 525px;
 }/*# sourceMappingURL=style.css.map */

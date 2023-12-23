@@ -1,6 +1,13 @@
 @use './accordion' as *;
 
 // https://en.wikipedia.org/wiki/List_of_video_game_console_palettes#NES
+$main-color: black;
+$second-color: white;
+$gap-size: 10px;
+$size-control: 350px;
+$scaling-factor: 1.5;
+$police-titre: 'Vina Sans', sans-serif;
+$police-texte: 'Roboto', sans-serif;
 
 $color-black: #212529;
 $color-white: #fff;
@@ -283,9 +290,37 @@ header .nes-btn a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    button {
+    }
 }
+
 @media (min-width: 768px) {
     .card {
         flex-direction: row;
     }
+}
+.gallerie {
+    background-color: $main-color;
+    display: grid;
+    gap: $gap-size;
+    width: 900px;
+    aspect-ratio: 1/1;
+    grid-template-columns: repeat(5, auto);
+    min-height: 80vh;
+    max-height: 80vh;
+}
+
+.gallerie > img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+
+.gallerie > img:hover {
+    width: calc($size-control * $scaling-factor);
+    height: calc($size-control * $scaling-factor);
 }
