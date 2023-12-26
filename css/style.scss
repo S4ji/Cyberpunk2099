@@ -294,6 +294,23 @@ header .nes-btn a {
     }
 }
 
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.avantages-defauts {
+    height: 300px;
+    overflow-y: scroll;
+    margin-left: 20px;
+}
+
 @media (min-width: 768px) {
     .card {
         flex-direction: row;
