@@ -322,9 +322,9 @@ li {
     gap: $gap-size;
     width: 900px;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(5, auto);
-    min-height: 80vh;
-    max-height: 80vh;
+    grid-template-columns: repeat(4s, auto);
+    min-height: 50vh;
+    max-height: 50vh;
 }
 
 .gallerie > img {
