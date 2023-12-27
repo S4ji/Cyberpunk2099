@@ -246,8 +246,8 @@ li {
   width: 900px;
   aspect-ratio: 1/1;
   grid-template-columns: repeat(4, auto);
-  min-height: 50vh;
-  max-height: 50vh;
+  min-height: 70vh;
+  max-height: 70vh;
 }
 
 .gallerie > img {
